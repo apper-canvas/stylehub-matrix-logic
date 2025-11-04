@@ -333,6 +333,384 @@
     "rating": 4.6,
     "reviewCount": 84,
     "inStock": true,
-    "tags": ["earrings", "bohemian", "statement", "handcrafted"]
+"tags": ["earrings", "bohemian", "statement", "handcrafted"]
+  },
+  {
+    "Id": 17,
+    "title": "Premium Cotton Polo Shirt",
+    "category": "Men",
+    "subcategory": "Polos",
+    "brand": "Polo Club",
+    "price": 1899,
+    "originalPrice": 2499,
+    "discount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Navy", "White", "Forest Green", "Burgundy"],
+    "description": "Classic polo shirt crafted from premium cotton pique. Features a traditional collar and three-button placket for timeless style.",
+    "rating": 4.4,
+    "reviewCount": 167,
+    "inStock": true,
+    "tags": ["polo", "cotton", "classic", "casual"]
+  },
+  {
+    "Id": 18,
+    "title": "Tailored Dress Pants",
+    "category": "Men",
+    "subcategory": "Dress Pants",
+    "brand": "Gentleman's Choice",
+    "price": 3299,
+    "originalPrice": 4299,
+    "discount": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1594938384819-d4e4bd8ad5e7?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["30", "32", "34", "36", "38", "40"],
+    "colors": ["Charcoal", "Navy", "Black", "Gray"],
+    "description": "Perfectly tailored dress pants with a modern slim fit. Made from wrinkle-resistant fabric for professional occasions.",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "inStock": true,
+    "tags": ["dress-pants", "tailored", "professional", "slim-fit"]
+  },
+  {
+    "Id": 19,
+    "title": "Modern Fit Blazer",
+    "category": "Men",
+    "subcategory": "Blazers",
+    "brand": "Executive Collection",
+    "price": 5999,
+    "originalPrice": 7999,
+    "discount": 25,
+    "images": [
+      "https://images.unsplash.com/photo-1594938384819-d4e4bd8ad5e7?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Navy", "Charcoal", "Black"],
+    "description": "Sophisticated blazer with modern fit and premium construction. Perfect for business meetings and formal events.",
+    "rating": 4.7,
+    "reviewCount": 89,
+    "inStock": true,
+    "tags": ["blazer", "modern-fit", "formal", "business"]
+  },
+  {
+    "Id": 20,
+    "title": "Performance Running Sneakers",
+    "category": "Men",
+    "subcategory": "Sneakers",
+    "brand": "SportMax",
+    "price": 4299,
+    "originalPrice": 5799,
+    "discount": 26,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["7", "8", "9", "10", "11", "12"],
+    "colors": ["White/Blue", "Black/Red", "Gray/Orange"],
+    "description": "High-performance running sneakers with advanced cushioning and breathable mesh upper. Ideal for sports and casual wear.",
+    "rating": 4.5,
+    "reviewCount": 234,
+    "inStock": true,
+    "tags": ["sneakers", "running", "performance", "athletic"]
+  },
+  {
+    "Id": 21,
+    "title": "Comfort Fit Hoodie",
+    "category": "Men",
+    "subcategory": "Hoodies",
+    "brand": "Urban Comfort",
+    "price": 2299,
+    "originalPrice": 2999,
+    "discount": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Gray", "Black", "Navy", "Olive"],
+    "description": "Ultra-comfortable hoodie with soft fleece interior. Features drawstring hood and kangaroo pocket for everyday comfort.",
+    "rating": 4.3,
+    "reviewCount": 178,
+    "inStock": true,
+    "tags": ["hoodie", "comfort", "casual", "fleece"]
+  },
+  {
+    "Id": 22,
+    "title": "Slim Fit Chino Pants",
+    "category": "Men",
+    "subcategory": "Chinos",
+    "brand": "Modern Essentials",
+    "price": 2199,
+    "originalPrice": 2899,
+    "discount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1594938384819-d4e4bd8ad5e7?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["30", "32", "34", "36", "38"],
+    "colors": ["Khaki", "Navy", "Olive", "Stone"],
+    "description": "Versatile chino pants with slim fit and comfortable stretch. Perfect for smart-casual occasions and weekend wear.",
+    "rating": 4.4,
+    "reviewCount": 145,
+    "inStock": true,
+    "tags": ["chinos", "slim-fit", "versatile", "smart-casual"]
+  },
+  {
+    "Id": 23,
+    "title": "Classic Two-Piece Suit",
+    "category": "Men",
+    "subcategory": "Suits",
+    "brand": "Tailored Excellence",
+    "price": 8999,
+    "originalPrice": 11999,
+    "discount": 25,
+    "images": [
+      "https://images.unsplash.com/photo-1594938384819-d4e4bd8ad5e7?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Charcoal", "Navy", "Black"],
+    "description": "Premium two-piece suit with expert tailoring. Includes jacket and trousers, perfect for weddings and formal events.",
+    "rating": 4.8,
+    "reviewCount": 67,
+    "inStock": true,
+    "tags": ["suit", "formal", "two-piece", "wedding"]
+  },
+  {
+    "Id": 24,
+    "title": "Silk Patterned Necktie",
+    "category": "Men",
+    "subcategory": "Ties",
+    "brand": "Signature Style",
+    "price": 1299,
+    "originalPrice": 1799,
+    "discount": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1594938384819-d4e4bd8ad5e7?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["One Size"],
+    "colors": ["Navy Dots", "Red Stripe", "Gray Geometric"],
+    "description": "Elegant silk necktie with sophisticated pattern. Premium quality silk with classic width for professional styling.",
+    "rating": 4.5,
+    "reviewCount": 92,
+    "inStock": true,
+    "tags": ["tie", "silk", "patterned", "professional"]
+  },
+  {
+    "Id": 25,
+    "title": "Genuine Leather Belt",
+    "category": "Men",
+    "subcategory": "Belts",
+    "brand": "Leather Craft Co.",
+    "price": 1999,
+    "originalPrice": 2699,
+    "discount": 26,
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["32", "34", "36", "38", "40", "42"],
+    "colors": ["Black", "Brown", "Tan"],
+    "description": "Handcrafted genuine leather belt with classic buckle. Durable construction and timeless design for everyday wear.",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "inStock": true,
+    "tags": ["belt", "leather", "genuine", "classic"]
+  },
+  {
+    "Id": 26,
+    "title": "Waterproof Hiking Boots",
+    "category": "Men",
+    "subcategory": "Boots",
+    "brand": "Trail Master",
+    "price": 5499,
+    "originalPrice": 7299,
+    "discount": 25,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["7", "8", "9", "10", "11", "12"],
+    "colors": ["Brown", "Black", "Olive"],
+    "description": "Rugged waterproof hiking boots with superior grip and ankle support. Built for outdoor adventures and harsh terrain.",
+    "rating": 4.7,
+    "reviewCount": 123,
+    "inStock": true,
+    "tags": ["boots", "hiking", "waterproof", "outdoor"]
+  },
+  {
+    "Id": 27,
+    "title": "Vintage Wash Henley Shirt",
+    "category": "Men",
+    "subcategory": "T-Shirts",
+    "brand": "Vintage Republic",
+    "price": 1599,
+    "originalPrice": 2199,
+    "discount": 27,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Charcoal", "Olive", "Burgundy", "Navy"],
+    "description": "Soft vintage-wash henley with button placket detail. Comfortable relaxed fit perfect for layering or standalone wear.",
+    "rating": 4.3,
+    "reviewCount": 187,
+    "inStock": true,
+    "tags": ["henley", "vintage", "casual", "comfortable"]
+  },
+  {
+    "Id": 28,
+    "title": "Technical Performance Shorts",
+    "category": "Men",
+    "subcategory": "Shorts",
+    "brand": "ActiveFit Pro",
+    "price": 1799,
+    "originalPrice": 2399,
+    "discount": 25,
+    "images": [
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Black", "Navy", "Gray", "Olive"],
+    "description": "High-performance shorts with moisture-wicking technology and 4-way stretch. Ideal for training, running, and active lifestyle.",
+    "rating": 4.5,
+    "reviewCount": 201,
+    "inStock": true,
+    "tags": ["shorts", "performance", "moisture-wicking", "athletic"]
+  },
+  {
+    "Id": 29,
+    "title": "Merino Wool V-Neck Sweater",
+    "category": "Men",
+    "subcategory": "Sweaters",
+    "brand": "Woolmark Premium",
+    "price": 3799,
+    "originalPrice": 4999,
+    "discount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1517298215226-d1beb2cdc74d?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1564644950297-a9ed9c3fbccb?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Charcoal", "Navy", "Camel", "Forest Green"],
+    "description": "Luxury merino wool V-neck sweater with exceptional softness and warmth. Perfect for office wear and special occasions.",
+    "rating": 4.6,
+    "reviewCount": 98,
+    "inStock": true,
+    "tags": ["sweater", "merino-wool", "v-neck", "luxury"]
+  },
+  {
+    "Id": 30,
+    "title": "Canvas Casual Sneakers",
+    "category": "Men",
+    "subcategory": "Sneakers",
+    "brand": "Street Style",
+    "price": 2299,
+    "originalPrice": 2999,
+    "discount": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["7", "8", "9", "10", "11", "12"],
+    "colors": ["White", "Black", "Navy", "Gray"],
+    "description": "Classic canvas sneakers with rubber sole and comfortable cushioning. Timeless design perfect for everyday casual wear.",
+    "rating": 4.2,
+    "reviewCount": 267,
+    "inStock": true,
+    "tags": ["sneakers", "canvas", "casual", "classic"]
+  },
+  {
+    "Id": 31,
+    "title": "Quilted Puffer Jacket",
+    "category": "Men",
+    "subcategory": "Jackets",
+    "brand": "Winter Shield",
+    "price": 4499,
+    "originalPrice": 5999,
+    "discount": 25,
+    "images": [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Black", "Navy", "Olive", "Charcoal"],
+    "description": "Warm quilted puffer jacket with water-resistant outer shell. Features zip pockets and adjustable hem for winter comfort.",
+    "rating": 4.4,
+    "reviewCount": 143,
+    "inStock": true,
+    "tags": ["jacket", "puffer", "quilted", "winter"]
+  },
+  {
+    "Id": 32,
+    "title": "Moisture-Wicking Tank Top",
+    "category": "Men",
+    "subcategory": "Activewear",
+    "brand": "Fit Performance",
+    "price": 999,
+    "originalPrice": 1399,
+    "discount": 29,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Black", "White", "Gray", "Navy"],
+    "description": "Lightweight tank top with moisture-wicking fabric and anti-odor technology. Perfect for gym workouts and hot weather activities.",
+    "rating": 4.3,
+    "reviewCount": 189,
+    "inStock": true,
+    "tags": ["tank-top", "moisture-wicking", "athletic", "workout"]
+  },
+  {
+    "Id": 33,
+    "title": "Oxford Button-Down Shirt",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "brand": "Classic Threads",
+    "price": 2199,
+    "originalPrice": 2899,
+    "discount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Light Blue", "White", "Pink", "Yellow"],
+    "description": "Traditional Oxford cotton button-down shirt with classic collar and chest pocket. Versatile piece for casual and business casual wear.",
+    "rating": 4.5,
+    "reviewCount": 176,
+    "inStock": true,
+    "tags": ["oxford", "button-down", "cotton", "versatile"]
+  },
+  {
+    "Id": 34,
+    "title": "Lightweight Summer Cardigan",
+    "category": "Men",
+    "subcategory": "Cardigans",
+    "brand": "Summer Breeze",
+    "price": 2799,
+    "originalPrice": 3699,
+    "discount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1517298215226-d1beb2cdc74d?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1564644950297-a9ed9c3fbccb?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Cream", "Light Gray", "Navy", "Sage Green"],
+    "description": "Breathable lightweight cardigan perfect for air-conditioned spaces and cool evenings. Features button closure and two front pockets.",
+    "rating": 4.4,
+    "reviewCount": 87,
+    "inStock": true,
+    "tags": ["cardigan", "lightweight", "summer", "layering"]
   }
 ]
