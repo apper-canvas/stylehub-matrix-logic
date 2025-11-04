@@ -1,118 +1,249 @@
-import productsData from "@/services/mockData/products.json";
+import { getApperClient } from '@/services/apperClient';
 
 class ProductService {
   constructor() {
-    this.products = [...productsData];
+    this.tableName = 'product_c';
   }
 
-  // Simulate API delay
-  delay(ms = 300) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  // Transform database record to UI format
+  transformProduct(record) {
+    return {
+      Id: record.Id,
+      title: record.title_c || record.Name,
+      category: record.category_c,
+      subcategory: record.subcategory_c,
+      brand: record.brand_c,
+      price: record.price_c,
+      originalPrice: record.original_price_c,
+      discount: record.discount_c || 0,
+      images: record.images_c ? record.images_c.split('\n').filter(Boolean) : [],
+      sizes: record.sizes_c ? record.sizes_c.split('\n').filter(Boolean) : [],
+      colors: record.colors_c ? record.colors_c.split('\n').filter(Boolean) : [],
+      description: record.description_c,
+      rating: record.rating_c,
+      reviewCount: record.review_count_c,
+      inStock: record.in_stock_c,
+      tags: record.tags_c ? record.tags_c.split('\n').filter(Boolean) : []
+    };
   }
 
   async getAll() {
-    await this.delay();
-    return [...this.products];
+    try {
+      const apperClient = getApperClient();
+      if (!apperClient) {
+        throw new Error('ApperClient not available');
+      }
+
+      const params = {
+        fields: [
+          {"field": {"Name": "Id"}},
+          {"field": {"Name": "Name"}},
+          {"field": {"Name": "title_c"}},
+          {"field": {"Name": "category_c"}},
+          {"field": {"Name": "subcategory_c"}},
+          {"field": {"Name": "brand_c"}},
+          {"field": {"Name": "price_c"}},
+          {"field": {"Name": "original_price_c"}},
+          {"field": {"Name": "discount_c"}},
+          {"field": {"Name": "images_c"}},
+          {"field": {"Name": "sizes_c"}},
+          {"field": {"Name": "colors_c"}},
+          {"field": {"Name": "description_c"}},
+          {"field": {"Name": "rating_c"}},
+          {"field": {"Name": "review_count_c"}},
+          {"field": {"Name": "in_stock_c"}},
+          {"field": {"Name": "tags_c"}}
+        ],
+        orderBy: [{
+          "fieldName": "Id",
+          "sorttype": "DESC"
+        }],
+        pagingInfo: {
+          "limit": 100,
+          "offset": 0
+        }
+      };
+
+      const response = await apperClient.fetchRecords(this.tableName, params);
+
+      if (!response.success) {
+        console.error("Error fetching products:", response.message);
+        throw new Error(response.message);
+      }
+
+      return response.data.map(record => this.transformProduct(record));
+    } catch (error) {
+      console.error("Error fetching products:", error?.response?.data?.message || error);
+      throw error;
+    }
   }
 
   async getById(id) {
-    await this.delay();
-    const product = this.products.find(p => p.Id === id);
-    if (!product) {
-      throw new Error("Product not found");
+    try {
+      const apperClient = getApperClient();
+      if (!apperClient) {
+        throw new Error('ApperClient not available');
+      }
+
+      const params = {
+        fields: [
+          {"field": {"Name": "Id"}},
+          {"field": {"Name": "Name"}},
+          {"field": {"Name": "title_c"}},
+          {"field": {"Name": "category_c"}},
+          {"field": {"Name": "subcategory_c"}},
+          {"field": {"Name": "brand_c"}},
+          {"field": {"Name": "price_c"}},
+          {"field": {"Name": "original_price_c"}},
+          {"field": {"Name": "discount_c"}},
+          {"field": {"Name": "images_c"}},
+          {"field": {"Name": "sizes_c"}},
+          {"field": {"Name": "colors_c"}},
+          {"field": {"Name": "description_c"}},
+          {"field": {"Name": "rating_c"}},
+          {"field": {"Name": "review_count_c"}},
+          {"field": {"Name": "in_stock_c"}},
+          {"field": {"Name": "tags_c"}}
+        ]
+      };
+
+      const response = await apperClient.getRecordById(this.tableName, id, params);
+
+      if (!response.success) {
+        console.error(`Error fetching product ${id}:`, response.message);
+        throw new Error(response.message);
+      }
+
+      if (!response.data) {
+        throw new Error("Product not found");
+      }
+
+      return this.transformProduct(response.data);
+    } catch (error) {
+      console.error(`Error fetching product ${id}:`, error?.response?.data?.message || error);
+      throw error;
     }
-    return { ...product };
   }
 
   async getByCategory(category) {
-    await this.delay();
-    return this.products.filter(p => 
-      p.category.toLowerCase() === category.toLowerCase()
-    );
+    try {
+      const products = await this.getAll();
+      return products.filter(p => 
+        p.category.toLowerCase() === category.toLowerCase()
+      );
+    } catch (error) {
+      console.error("Error filtering products by category:", error?.response?.data?.message || error);
+      throw error;
+    }
   }
 
   async search(query) {
-    await this.delay();
-    const searchTerm = query.toLowerCase();
-    return this.products.filter(product =>
-      product.title.toLowerCase().includes(searchTerm) ||
-      product.brand.toLowerCase().includes(searchTerm) ||
-      product.category.toLowerCase().includes(searchTerm) ||
-      product.subcategory?.toLowerCase().includes(searchTerm) ||
-      product.description?.toLowerCase().includes(searchTerm) ||
-      product.tags?.some(tag => tag.toLowerCase().includes(searchTerm))
-    );
+    try {
+      const products = await this.getAll();
+      const searchTerm = query.toLowerCase();
+      return products.filter(product =>
+        product.title.toLowerCase().includes(searchTerm) ||
+        product.brand.toLowerCase().includes(searchTerm) ||
+        product.category.toLowerCase().includes(searchTerm) ||
+        product.subcategory?.toLowerCase().includes(searchTerm) ||
+        product.description?.toLowerCase().includes(searchTerm) ||
+        product.tags?.some(tag => tag.toLowerCase().includes(searchTerm))
+      );
+    } catch (error) {
+      console.error("Error searching products:", error?.response?.data?.message || error);
+      throw error;
+    }
   }
 
   async getFeatured() {
-    await this.delay();
-    // Return products with high ratings or marked as featured
-    return this.products
-      .filter(p => p.rating >= 4.5)
-      .slice(0, 8);
+    try {
+      const products = await this.getAll();
+      // Return products with high ratings or marked as featured
+      return products
+        .filter(p => p.rating >= 4.5)
+        .slice(0, 8);
+    } catch (error) {
+      console.error("Error fetching featured products:", error?.response?.data?.message || error);
+      throw error;
+    }
   }
 
   async getSaleItems() {
-    await this.delay();
-    // Return products with discounts
-    return this.products.filter(p => p.discount > 0);
+    try {
+      const products = await this.getAll();
+      // Return products with discounts
+      return products.filter(p => p.discount > 0);
+    } catch (error) {
+      console.error("Error fetching sale items:", error?.response?.data?.message || error);
+      throw error;
+    }
   }
 
   // Filter methods
   async filterProducts(filters) {
-    await this.delay();
-    let filtered = [...this.products];
+    try {
+      const products = await this.getAll();
+      let filtered = [...products];
 
-    if (filters.category) {
-      filtered = filtered.filter(p => 
-        p.category.toLowerCase() === filters.category.toLowerCase()
-      );
+      if (filters.category) {
+        filtered = filtered.filter(p => 
+          p.category.toLowerCase() === filters.category.toLowerCase()
+        );
+      }
+
+      if (filters.priceRange) {
+        const { min, max } = filters.priceRange;
+        filtered = filtered.filter(p => {
+          const price = p.price;
+          return (!min || price >= min) && (!max || price <= max);
+        });
+      }
+
+      if (filters.sizes && filters.sizes.length > 0) {
+        filtered = filtered.filter(p => 
+          p.sizes && p.sizes.some(size => filters.sizes.includes(size))
+        );
+      }
+
+      if (filters.colors && filters.colors.length > 0) {
+        filtered = filtered.filter(p => 
+          p.colors && p.colors.some(color => filters.colors.includes(color))
+        );
+      }
+
+      if (filters.brands && filters.brands.length > 0) {
+        filtered = filtered.filter(p => 
+          filters.brands.includes(p.brand)
+        );
+      }
+
+      return filtered;
+    } catch (error) {
+      console.error("Error filtering products:", error?.response?.data?.message || error);
+      throw error;
     }
-
-    if (filters.priceRange) {
-      const { min, max } = filters.priceRange;
-      filtered = filtered.filter(p => {
-        const price = p.price;
-        return (!min || price >= min) && (!max || price <= max);
-      });
-    }
-
-    if (filters.sizes && filters.sizes.length > 0) {
-      filtered = filtered.filter(p => 
-        p.sizes && p.sizes.some(size => filters.sizes.includes(size))
-      );
-    }
-
-    if (filters.colors && filters.colors.length > 0) {
-      filtered = filtered.filter(p => 
-        p.colors && p.colors.some(color => filters.colors.includes(color))
-      );
-    }
-
-    if (filters.brands && filters.brands.length > 0) {
-      filtered = filtered.filter(p => 
-        filters.brands.includes(p.brand)
-      );
-    }
-
-    return filtered;
   }
 
   // Get unique filter values
   async getFilterOptions() {
-    await this.delay();
-    
-    const categories = [...new Set(this.products.map(p => p.category))];
-    const brands = [...new Set(this.products.map(p => p.brand))];
-    const sizes = [...new Set(this.products.flatMap(p => p.sizes || []))];
-    const colors = [...new Set(this.products.flatMap(p => p.colors || []))];
+    try {
+      const products = await this.getAll();
+      
+      const categories = [...new Set(products.map(p => p.category))];
+      const brands = [...new Set(products.map(p => p.brand))];
+      const sizes = [...new Set(products.flatMap(p => p.sizes || []))];
+      const colors = [...new Set(products.flatMap(p => p.colors || []))];
 
-    return {
-      categories,
-      brands,
-      sizes,
-      colors
-    };
+      return {
+        categories,
+        brands,
+        sizes,
+        colors
+      };
+    } catch (error) {
+      console.error("Error fetching filter options:", error?.response?.data?.message || error);
+      throw error;
+    }
   }
 }
 

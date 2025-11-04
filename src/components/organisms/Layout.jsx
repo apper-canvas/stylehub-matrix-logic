@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import { useCart } from "@/hooks/useCart";
+import { useAuth } from "@/layouts/Root";
 import Header from "@/components/organisms/Header";
 import CartDrawer from "@/components/organisms/CartDrawer";
-import { useCart } from "@/hooks/useCart";
-
 const Layout = () => {
   const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
   const { cartItems, updateQuantity, removeFromCart, clearCart } = useCart();
+  const { logout } = useAuth();
 
   const handleCheckout = () => {
     // In a real app, this would navigate to checkout
@@ -28,7 +29,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <Header />
+      <Header logout={logout} />
 
       {/* Main Content */}
       <main>

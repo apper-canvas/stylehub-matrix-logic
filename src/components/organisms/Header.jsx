@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import SearchBar from "@/components/molecules/SearchBar";
-import ApperIcon from "@/components/ApperIcon";
 import { useCart } from "@/hooks/useCart";
 import { useWishlist } from "@/hooks/useWishlist";
+import ApperIcon from "@/components/ApperIcon";
+import SearchBar from "@/components/molecules/SearchBar";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+<nav className="hidden lg:flex items-center space-x-8">
             {categories.map((category) => (
               <Link
                 key={category.name}
@@ -53,15 +53,15 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Search Bar - Desktop */}
-          <div className="hidden md:block">
+          {/* Search - Desktop */}
+          <div className="hidden lg:block flex-1 max-w-2xl mx-8">
             <SearchBar onSearch={handleSearch} />
           </div>
 
-          {/* Right Actions */}
+          {/* Actions */}
           <div className="flex items-center space-x-4">
-            {/* Search Icon - Mobile */}
-            <button className="md:hidden text-secondary hover:text-primary">
+            {/* Search - Mobile */}
+            <button className="lg:hidden text-secondary hover:text-primary transition-colors">
               <ApperIcon name="Search" size={24} />
             </button>
 
@@ -91,6 +91,12 @@ const Header = () => {
               )}
             </Link>
 
+{/* User Menu */}
+            <div className="relative">
+              <button className="text-secondary hover:text-primary transition-colors">
+                <ApperIcon name="User" size={24} />
+              </button>
+            </div>
             {/* Mobile Menu Toggle */}
             <button
               className="lg:hidden text-secondary hover:text-primary"
