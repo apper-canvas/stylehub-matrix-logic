@@ -1,0 +1,338 @@
+[
+  {
+    "Id": 1,
+    "title": "Classic White Cotton T-Shirt",
+    "category": "Men",
+    "subcategory": "T-Shirts",
+    "brand": "StyleHub Basics",
+    "price": 899,
+    "originalPrice": 1299,
+    "discount": 31,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White", "Black", "Gray"],
+    "description": "Premium cotton t-shirt with a comfortable regular fit. Perfect for everyday wear with its soft fabric and classic design.",
+    "rating": 4.5,
+    "reviewCount": 128,
+    "inStock": true,
+    "tags": ["casual", "cotton", "everyday"]
+  },
+  {
+    "Id": 2,
+    "title": "Floral Summer Dress",
+    "category": "Women",
+    "subcategory": "Dresses",
+    "brand": "Bloom Fashion",
+    "price": 2499,
+    "originalPrice": 3299,
+    "discount": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566479179817-c2b8b8b72a51?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["Floral Blue", "Floral Pink"],
+    "description": "Light and breezy summer dress with beautiful floral print. Features a comfortable A-line silhouette perfect for warm weather.",
+    "rating": 4.7,
+    "reviewCount": 89,
+    "inStock": true,
+    "tags": ["summer", "floral", "dress", "casual"]
+  },
+  {
+    "Id": 3,
+    "title": "Denim Jacket Classic Blue",
+    "category": "Men",
+    "subcategory": "Jackets",
+    "brand": "Urban Denim",
+    "price": 3299,
+    "originalPrice": 4499,
+    "discount": 27,
+    "images": [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["Classic Blue", "Black", "Light Blue"],
+    "description": "Timeless denim jacket crafted from premium cotton denim. A wardrobe essential that pairs well with any outfit.",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "inStock": true,
+    "tags": ["denim", "jacket", "classic", "versatile"]
+  },
+  {
+    "Id": 4,
+    "title": "High-Waisted Mom Jeans",
+    "category": "Women",
+    "subcategory": "Jeans",
+    "brand": "Vintage Vibes",
+    "price": 2799,
+    "originalPrice": 3799,
+    "discount": 26,
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["26", "28", "30", "32", "34"],
+    "colors": ["Light Blue", "Dark Blue", "Black"],
+    "description": "Trendy high-waisted mom jeans with a relaxed fit. Made from comfortable stretch denim for all-day wear.",
+    "rating": 4.4,
+    "reviewCount": 203,
+    "inStock": true,
+    "tags": ["jeans", "high-waisted", "mom-jeans", "vintage"]
+  },
+  {
+    "Id": 5,
+    "title": "Striped Long Sleeve Shirt",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "brand": "Coastal Style",
+    "price": 1599,
+    "originalPrice": 2199,
+    "discount": 27,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Navy Stripe", "Red Stripe", "Green Stripe"],
+    "description": "Classic striped long sleeve shirt perfect for casual and smart-casual occasions. Comfortable cotton blend fabric.",
+    "rating": 4.3,
+    "reviewCount": 94,
+    "inStock": true,
+    "tags": ["striped", "long-sleeve", "casual", "smart-casual"]
+  },
+  {
+    "Id": 6,
+    "title": "Bohemian Maxi Skirt",
+    "category": "Women",
+    "subcategory": "Skirts",
+    "brand": "Boho Chic",
+    "price": 1999,
+    "originalPrice": 2799,
+    "discount": 29,
+    "images": [
+      "https://images.unsplash.com/photo-1583496661160-fb5886a13d1e?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Burgundy", "Navy", "Forest Green"],
+    "description": "Flowing maxi skirt with bohemian print. Features an elastic waistband and tiered design for maximum comfort and style.",
+    "rating": 4.6,
+    "reviewCount": 76,
+    "inStock": true,
+    "tags": ["maxi", "bohemian", "flowy", "comfortable"]
+  },
+  {
+    "Id": 7,
+    "title": "Kids Rainbow Unicorn T-Shirt",
+    "category": "Kids",
+    "subcategory": "T-Shirts",
+    "brand": "Little Dreamers",
+    "price": 699,
+    "originalPrice": 999,
+    "discount": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1503944168801-af4f8b70b3b4?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+    "colors": ["White", "Pink", "Purple"],
+    "description": "Adorable unicorn-themed t-shirt for kids. Soft cotton fabric with vibrant, fade-resistant print that kids will love.",
+    "rating": 4.8,
+    "reviewCount": 145,
+    "inStock": true,
+    "tags": ["kids", "unicorn", "colorful", "fun"]
+  },
+  {
+    "Id": 8,
+    "title": "Leather Crossbody Bag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "brand": "Luxe Leather",
+    "price": 4299,
+    "originalPrice": 5999,
+    "discount": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["One Size"],
+    "colors": ["Brown", "Black", "Tan"],
+    "description": "Premium leather crossbody bag with adjustable strap. Features multiple compartments and premium hardware for everyday elegance.",
+    "rating": 4.7,
+    "reviewCount": 92,
+    "inStock": true,
+    "tags": ["leather", "crossbody", "premium", "versatile"]
+  },
+  {
+    "Id": 9,
+    "title": "Casual Cargo Shorts",
+    "category": "Men",
+    "subcategory": "Shorts",
+    "brand": "Adventure Wear",
+    "price": 1299,
+    "originalPrice": 1799,
+    "discount": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["30", "32", "34", "36", "38"],
+    "colors": ["Khaki", "Black", "Olive"],
+    "description": "Comfortable cargo shorts with multiple pockets. Perfect for outdoor activities and casual summer days.",
+    "rating": 4.2,
+    "reviewCount": 67,
+    "inStock": true,
+    "tags": ["cargo", "shorts", "casual", "summer"]
+  },
+  {
+    "Id": 10,
+    "title": "Elegant Black Heel Sandals",
+    "category": "Women",
+    "subcategory": "Shoes",
+    "brand": "Step in Style",
+    "price": 3599,
+    "originalPrice": 4799,
+    "discount": 25,
+    "images": [
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["5", "6", "7", "8", "9"],
+    "colors": ["Black", "Nude", "Red"],
+    "description": "Sophisticated heel sandals perfect for formal occasions. Comfortable padding and ankle strap for secure fit.",
+    "rating": 4.5,
+    "reviewCount": 134,
+    "inStock": true,
+    "tags": ["heels", "sandals", "formal", "elegant"]
+  },
+  {
+    "Id": 11,
+    "title": "Cozy Knit Sweater",
+    "category": "Women",
+    "subcategory": "Sweaters",
+    "brand": "Warm & Fuzzy",
+    "price": 2299,
+    "originalPrice": 3199,
+    "discount": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1517298215226-d1beb2cdc74d?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1564644950297-a9ed9c3fbccb?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Cream", "Gray", "Pink", "Blue"],
+    "description": "Ultra-soft knit sweater perfect for chilly days. Relaxed fit with ribbed cuffs and hem for added comfort.",
+    "rating": 4.6,
+    "reviewCount": 112,
+    "inStock": true,
+    "tags": ["knit", "sweater", "cozy", "winter"]
+  },
+  {
+    "Id": 12,
+    "title": "Athletic Performance Joggers",
+    "category": "Men",
+    "subcategory": "Activewear",
+    "brand": "Fit Pro",
+    "price": 1899,
+    "originalPrice": 2599,
+    "discount": 27,
+    "images": [
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Black", "Navy", "Gray", "Charcoal"],
+    "description": "High-performance joggers with moisture-wicking fabric. Ideal for workouts, running, or casual wear.",
+    "rating": 4.4,
+    "reviewCount": 189,
+    "inStock": true,
+    "tags": ["joggers", "athletic", "performance", "workout"]
+  },
+  {
+    "Id": 13,
+    "title": "Kids Dinosaur Print Hoodie",
+    "category": "Kids",
+    "subcategory": "Hoodies",
+    "brand": "Adventure Kids",
+    "price": 1199,
+    "originalPrice": 1699,
+    "discount": 29,
+    "images": [
+      "https://images.unsplash.com/photo-1503944168801-af4f8b70b3b4?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-11Y"],
+    "colors": ["Green", "Blue", "Red"],
+    "description": "Fun dinosaur-themed hoodie for kids. Soft fleece lining and front pocket make it perfect for playtime and adventures.",
+    "rating": 4.7,
+    "reviewCount": 98,
+    "inStock": true,
+    "tags": ["kids", "dinosaur", "hoodie", "fun"]
+  },
+  {
+    "Id": 14,
+    "title": "Classic Aviator Sunglasses",
+    "category": "Accessories",
+    "subcategory": "Sunglasses",
+    "brand": "Sunny Days",
+    "price": 2199,
+    "originalPrice": 2999,
+    "discount": 27,
+    "images": [
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["One Size"],
+    "colors": ["Gold Frame", "Silver Frame", "Black Frame"],
+    "description": "Timeless aviator sunglasses with UV protection. Premium metal frames with gradient lenses for style and protection.",
+    "rating": 4.3,
+    "reviewCount": 76,
+    "inStock": true,
+    "tags": ["sunglasses", "aviator", "classic", "uv-protection"]
+  },
+  {
+    "Id": 15,
+    "title": "Business Formal Shirt",
+    "category": "Men",
+    "subcategory": "Formal Shirts",
+    "brand": "Executive Style",
+    "price": 2599,
+    "originalPrice": 3499,
+    "discount": 26,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["White", "Light Blue", "Gray"],
+    "description": "Professional formal shirt perfect for business meetings. Premium cotton fabric with classic collar and cuffs.",
+    "rating": 4.5,
+    "reviewCount": 156,
+    "inStock": true,
+    "tags": ["formal", "business", "professional", "cotton"]
+  },
+  {
+    "Id": 16,
+    "title": "Bohemian Statement Earrings",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "brand": "Artisan Crafts",
+    "price": 899,
+    "originalPrice": 1299,
+    "discount": 31,
+    "images": [
+      "https://images.unsplash.com/photo-1506629905607-b5f92cc4d8fe?w=500&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop"
+    ],
+    "sizes": ["One Size"],
+    "colors": ["Gold", "Silver", "Rose Gold"],
+    "description": "Handcrafted bohemian-style statement earrings. Intricate design with premium materials for a unique look.",
+    "rating": 4.6,
+    "reviewCount": 84,
+    "inStock": true,
+    "tags": ["earrings", "bohemian", "statement", "handcrafted"]
+  }
+]
