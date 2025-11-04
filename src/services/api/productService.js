@@ -6,7 +6,7 @@ class ProductService {
   }
 
   // Transform database record to UI format
-  transformProduct(record) {
+transformProduct(record) {
     return {
       Id: record.Id,
       title: record.title_c || record.Name,

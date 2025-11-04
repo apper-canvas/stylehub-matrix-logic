@@ -149,8 +149,8 @@ const SearchPage = () => {
   };
 
   // Get unique values for filter options
-  const categories = [...new Set(products.map(p => p.category))];
-  const brands = [...new Set(products.map(p => p.brand))];
+const categories = [...new Set(products.map(p => p.category).filter(Boolean))];
+  const brands = [...new Set(products.map(p => p.brand).filter(Boolean))];
 
   const sortOptions = [
     { value: "popularity", label: "Popularity" },
