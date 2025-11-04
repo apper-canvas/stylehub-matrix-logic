@@ -26,10 +26,10 @@ const CategoryPage = () => {
     try {
       setLoading(true);
       setError(null);
-      const data = await productService.getAll();
-      // Filter products by category
+const data = await productService.getAll();
+      // Filter products by category using database field name
       const categoryProducts = data.filter(product => 
-        product.category.toLowerCase() === category.toLowerCase()
+        product.category_c && product.category_c.toLowerCase() === category.toLowerCase()
       );
       setProducts(categoryProducts);
       setFilteredProducts(categoryProducts);

@@ -59,11 +59,10 @@ class ProductService {
           "sorttype": "DESC"
         }],
         pagingInfo: {
-          "limit": 100,
+"limit": 1000,
           "offset": 0
         }
       };
-
       const response = await apperClient.fetchRecords(this.tableName, params);
 
       if (!response.success) {
